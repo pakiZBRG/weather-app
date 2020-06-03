@@ -1,0 +1,56 @@
+.main{
+   height: 80vh;
+   box-shadow: 0 13px 40px -13px rgba(0, 0, 0, .75);
+   width: 60%;
+   margin: 0 auto;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   overflow-x: hidden;
+   transform: translate(-50%, -50%);
+   border-radius: 3px;
+   background: #fff;
+   &2{
+      height: 80vh;
+      box-shadow: 0 13px 40px -13px rgba(0, 0, 0, .75);
+      width: 85%;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      overflow-x: hidden;
+      transform: translate(-50%, -50%);
+      border-radius: 3px;
+      background: #fff;
+      @include respond(largeTablet){
+         width: 95%;
+         height: 90vh;
+      }
+      @include respond(smallPhone){
+         height: 100%;
+         width: 100%;
+      }
+   }
+
+   @include respond(largeTablet){
+      height: 75vh;
+      width: 80%;
+   }
+
+   @include respond(tablet){
+      height: 80vh;
+      width: 85%;
+   }
+
+   @include respond(largePhone){
+      height: 100vh;
+      width: 100%;
+   }
+}
+
+.text-align{
+   text-align: center;
+   font-style: italic;
+   width: 80%;
+   margin: 15px auto 0 auto;
+}

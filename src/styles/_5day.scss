@@ -1,0 +1,50 @@
+.flex{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-top: 3rem;
+   @include respond(largeTablet){
+      grid-template-columns: 1fr 1fr;
+   }
+
+   @include respond(largePhone){
+      grid-template-columns: 1fr;
+   }
+
+   &_part{
+      border-radius: 7px;
+      box-shadow: 0 13px 20px -13px rgba(0, 0, 0, 0.6);
+      color: crimson;
+      width: 300px;
+      margin: 0 auto 30px auto;
+      @include respond(largePhone){
+         width: 90%;
+      }
+      & p{
+         text-align: center;
+      }
+   }
+
+   &_center{
+      text-align: center;
+   }
+
+   &_misura{
+      color: #000;
+   }
+
+   &_time{
+      background: crimson;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+   }
+
+   &_num{
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+
+   &_img{
+      user-select: none;
+   }
+}

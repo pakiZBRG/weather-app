@@ -1,0 +1,49 @@
+.weather-search {
+
+   &_form {
+      text-align: center;
+      margin: 1.7rem 0;
+   }
+ 
+   &_input {
+      display: inline-block;
+      border: solid 2px transparent;
+      background-color: rgba(crimson, .1);
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 2px;
+      margin-right: 4rem;
+      transition: 500ms;
+      &:focus {
+         outline: none;
+         border-bottom: solid 2px #E53935;
+      }
+   }
+ 
+   &_submit {
+      display: inline-block;
+      text-align: center;
+      background-color: transparent;
+      font-size: 3rem;
+      height: 30px;
+      width: 30px;
+      position: relative;
+      top: 0.9rem;
+      margin-left: -6rem;
+   }
+ 
+   &_button {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      color: #E53935;
+      cursor: pointer;
+      &:focus {
+         outline: none;
+      }
+   }
+ }
